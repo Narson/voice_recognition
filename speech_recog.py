@@ -71,14 +71,14 @@ if __name__ == "__main__":
     average = numpy.average(values)
     current_value = compare_with(file_name)
     
-    print minimum, maximum, average
+    print(minimum, maximum, average)
     
     fit = 100 - abs(average - current_value)
 
-    print "value:", current_value
+    print("value:", current_value)
 
     if current_value < maximum and current_value > minimum:
-        print "To jest moje Y. ", fit, "% dopasowania"
+        print("That is my Y. ", fit, "% fit")
     else:
-        print "To nie jest moje Y. ", fit, "% dopasowania"
+        print("That is not my Y. ", fit, "% fit")
                  
